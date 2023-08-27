@@ -1,0 +1,50 @@
+$pd: 30px;
+$main-cl: #3d00b7;
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    font-size: 1.4rem;
+    font-family: 'Arial';
+    & .container {
+        margin: 0 auto;
+        max-width: 1260px;
+        width: 100%;
+        padding-left: $pd;
+        padding-right: $pd;
+    }
+    & .container-fluid {
+        margin: 0 auto;
+        max-width: 100%;
+        padding-left: $pd;
+        padding-right: $pd;
+    }
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.slick-arrow{
+    display: none !important;
+}

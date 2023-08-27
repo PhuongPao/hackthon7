@@ -1,0 +1,94 @@
+@import '/src/assets/scss/mixin.scss';
+.brand{ 
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgb(63, 123, 255) 0%, rgb(190, 73, 223) 32.04%, rgb(253, 179, 36) 66%, rgb(2, 234, 171) 100%);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: 10s ease 0s infinite alternate none running usJcg;
+    font-family: BinancePlex, Arial, sans-serif !important;
+}
+@keyframes usJcg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(5turn);
+    }
+}
+.footer {
+    &__top {
+        display: flex;
+        gap: 100px;
+        padding: 70px 0;
+
+        &-item {
+            &:nth-child(1) {
+                flex: 2;
+            }
+
+            &:nth-child(2) {
+                flex: 1;
+            }
+
+            &:nth-child(3) {
+                flex: 1;
+            }
+
+            &:nth-child(4) {
+                flex: 2;
+            }
+        }
+
+        .brand {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .desc {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+
+            &-s {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+            }
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: capitalize;
+        }
+
+        .list {
+            li {
+                @include hoverLink;
+                a {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 200%;
+                    color: #3D3D3D;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid #F4F4F4;
+        padding: 20px;
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #A4A4A4;
+        }
+    }
+}

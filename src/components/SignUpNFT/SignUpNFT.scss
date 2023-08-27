@@ -1,0 +1,91 @@
+.signupNFT__left-item-img{ 
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.signupNFT__left-item{ 
+    display: flex;
+}
+
+.signupNFT {
+    display: flex;
+    height: 600px;
+    margin: 120px 0;
+    gap: 40px;
+
+
+    &__left {
+        flex: 1;
+        position: relative;
+
+        &-item {
+            position: absolute;
+
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                width: 260px;
+                height: 280px;
+            }
+
+            &:nth-child(2) {
+                top: 30%;
+                right: 30px;
+                width: 200px;
+                height: 220px;
+
+            }
+
+            &:nth-child(3) {
+                bottom: 0;
+                left: 25%;
+                width: 180px;
+                height: 200px;
+            }
+
+            &-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 12px;
+                overflow: hidden;
+            }
+
+            &-face {
+                position: absolute;
+                bottom: -12%;
+                right: -15%;
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                border-radius: 50%;
+                border: 4px solid #fff;
+            }
+        }
+    }
+
+    &__right {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &-title {
+            max-width: 320px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 40px;
+        }
+
+        &-desc {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #636363;
+        }
+
+        &-btn {
+            width: 50%;
+            margin: 20px 0;
+        }
+    }
+}

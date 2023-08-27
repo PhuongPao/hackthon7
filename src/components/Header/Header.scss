@@ -1,0 +1,95 @@
+@import '/src/assets/scss/mixin.scss';
+
+.header__brand{ 
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgb(63, 123, 255) 0%, rgb(190, 73, 223) 32.04%, rgb(253, 179, 36) 66%, rgb(2, 234, 171) 100%);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: 10s ease 0s infinite alternate none running usJcg;
+    font-family: BinancePlex, Arial, sans-serif !important;
+}
+@keyframes usJcg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(5turn);
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+
+    &__brand {
+        color: #3d00b7;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 29px;
+    }
+
+    &__menu {
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        &-item {
+            @include hoverLink;
+
+            a {
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.6rem;
+                line-height: 2.1rem;
+                letter-spacing: 0.04em;
+                color: #000000;
+            }
+        }
+    }
+
+    &__btn-group {
+        margin-left: auto;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 150px;
+    cursor: default;
+
+    &__info{
+        display: flex;
+        max-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img{
+            width: 20%;
+            height: 100%;
+            object-fit: contain;
+        }
+        p{
+            font-weight: 700;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__walletid {
+        width: 100%;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
